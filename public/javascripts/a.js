@@ -19,12 +19,12 @@ function displayHits(hits) {
         console.log(url);
         console.log(likes);
         $("#images").append(
-            ` <div class="column"> 
+            ` <div class="column container card shadow m-1"> 
+            <p>Number of likes: ${likes}</p>
         <image src=${url} style="width:100%">
-          <p>${likes}</p>
       </div>
     `
-        )
+        );
     }
 }
 $("#search").on("click", function() {
