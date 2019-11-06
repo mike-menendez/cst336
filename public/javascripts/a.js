@@ -13,7 +13,7 @@ function getTop(hits) {
 function displayHits(hits) {
     $("#images").html("");
     hits = getTop(hits);
-    for (let i = 0; i < hits.length; i++) {
+    for (var i = 0; i < hits.length; i++) {
         url = hits[i].largeImageURL;
         likes = hits[i].likes;
         console.log(url);
